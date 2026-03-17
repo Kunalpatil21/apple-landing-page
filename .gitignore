@@ -1,5 +1,5 @@
-# Ignore frames folder (too large for git)
-frames/
+# Frames folder - uncomment to ignore for large repos
+# frames/
 
 # Ignore Python cache
 __pycache__/
