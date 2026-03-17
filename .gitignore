@@ -1,0 +1,19 @@
+# Ignore frames folder (too large for git)
+frames/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore IDE
+.vscode/
+.idea/
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore temp files
+*.log
+*.tmp

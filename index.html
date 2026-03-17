@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple — Premium Product Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-brand">APPLE</div>
+    <div class="loader-bar">
+      <div class="loader-progress" id="loader-progress"></div>
+    </div>
+    <div class="loader-percent" id="loader-percent">0%</div>
+  </div>
+
+  <!-- Fixed Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">Apple</div>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#specs">Specs</a>
+        <a href="#cta" class="cta-link">Get Apple</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-standalone">
+    <div class="hero-content">
+      <span class="section-label">001 / Introducing</span>
+      <h1 class="hero-heading">
+        <span class="word">Apple</span>
+        <span class="word">Engineered</span>
+        <span class="word">for</span>
+        <span class="word">Perfection</span>
+      </h1>
+      <p class="hero-tagline">Experience the future of precision. Every frame, every detail, crafted to elevate your world.</p>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M19 12l-7 7-7-7"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Canvas (Video Frames) -->
+  <div class="canvas-wrap" id="canvas-wrap">
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <!-- Dark Overlay -->
+  <div id="dark-overlay"></div>
+
+  <!-- Marquee -->
+  <div class="marquee-wrap" data-scroll-speed="-20">
+    <div class="marquee-text">SEAMLESS DESIGN — PREMIUM QUALITY — INNOVATIVE ENGINEERING — THINK DIFFERENT — </div>
+  </div>
+
+  <!-- Scroll Container -->
+  <div id="scroll-container">
+    <!-- Feature 1 -->
+    <section class="scroll-section section-content align-left" data-enter="15" data-leave="28" data-animation="slide-left">
+      <div class="section-inner">
+        <span class="section-label">002 / Precision</span>
+        <h2 class="section-heading">Engineered with Absolute Precision</h2>
+        <p class="section-body">Every component is crafted to exacting standards. The result is a product that responds to your every move with buttery smoothness.</p>
+      </div>
+    </section>
+
+    <!-- Feature 2 -->
+    <section class="scroll-section section-content align-right" data-enter="32" data-leave="45" data-animation="slide-right">
+      <div class="section-inner">
+        <span class="section-label">003 / Performance</span>
+        <h2 class="section-heading">Unmatched Performance</h2>
+        <p class="section-body">Built on a foundation of cutting-edge technology that delivers speed, accuracy, and reliability in every interaction.</p>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="scroll-section section-stats" data-enter="50" data-leave="65" data-animation="stagger-up">
+      <div class="stats-grid">
+        <div class="stat">
+          <span class="stat-number" data-value="99.9" data-decimals="1">0</span>
+          <span class="stat-suffix">%</span>
+          <span class="stat-label">Accuracy</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-value="240" data-decimals="0">0</span>
+          <span class="stat-suffix">fps</span>
+          <span class="stat-label">Refresh Rate</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-value="0" data-decimals="1">0</span>
+          <span class="stat-suffix">ms</span>
+          <span class="stat-label">Latency</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature 3 -->
+    <section class="scroll-section section-content align-left" data-enter="68" data-leave="82" data-animation="fade-up">
+      <div class="section-inner">
+        <span class="section-label">004 / Design</span>
+        <h2 class="section-heading">Design That Speaks</h2>
+        <p class="section-body">Aesthetic excellence meets functional brilliance. The form follows function, creating a harmonious balance that delights the senses.</p>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="scroll-section section-cta" data-enter="88" data-leave="100" data-animation="scale-up" data-persist="true">
+      <div class="cta-content">
+        <span class="section-label">005 / Get Started</span>
+        <h2 class="section-heading">Ready to Experience Apple?</h2>
+        <p class="section-body">Join millions who have elevated their world with Apple. Premium quality, exceptional performance.</p>
+        <a href="#" class="cta-button">Order Now</a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
