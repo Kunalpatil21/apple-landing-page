@@ -1,4 +1,4 @@
-# Frames folder - uncomment to ignore for large repos
+# Frames are now tracked in git (37MB total)
 # frames/
 
 # Ignore Python cache
